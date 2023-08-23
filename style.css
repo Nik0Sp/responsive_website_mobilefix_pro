@@ -181,64 +181,8 @@ header {
 .header-container {
     margin-top: 9rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     position: relative;
     padding: .6rem;
-}
-
-header .container-left {
-    display: inline-block;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    flex-direction: column;
-    height: max-content;
-    gap: .6rem;
-    width: max-content;
-}
-
-header .container-left div {
-    background-color: orangered;
-    height: 190px;
-    border-radius: .6rem;
-}
-
-header .container-right{
-    background-color: green;
-    position: relative;
-    height: 100%;
-    border-radius: .9rem;
-    padding: 1rem 2rem;
-}
-
-header .container-right div:nth-child(1){
-    z-index: 2;
-    text-align: left;
-position: relative;
-}
-
-header .container-right div:nth-child(1) button{
-position: absolute;
-bottom: -6rem;
-left: 0rem;
-}
-
-header .container-right div:nth-child(1):before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -120%;
-    width: 100%;
-    background-color: red;
-    height: 100%;
-    z-index: 0;
-}
-
-
-
-
-.header-image{
-    position: absolute;
-    top: 0;
-    right: 0;
 }
